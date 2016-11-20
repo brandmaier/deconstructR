@@ -3,6 +3,9 @@ aniloop.gravity <- function(x,y,xlim,ylim, xlab,ylab, frames=60, stillframe=20) 
   
   totalframes <- frames+2*stillframe
   
+  speedy <- rep(0, N)
+  
+  
   for (i in 1:totalframes) {
     
     

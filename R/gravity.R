@@ -5,7 +5,7 @@ library(animation)
 
 
 
-gravity <- function(x,y, xlim=NULL, ylim=NULL,xlab=NULL, ylab=NULL) {
+plot <- function(x,y, xlim=NULL, ylim=NULL,xlab=NULL, ylab=NULL, type="gravity") {
   
 
 
@@ -21,9 +21,13 @@ height <- ylim[2]-ylim[1]
 floory <- ylim[1]
 freeze <- rep(FALSE, N)
 
+fun <- aniloop.gravity
+if (type == " blackhole") {
+  fun <- aniloop.blackhole
+}
 
 
-saveGIF( aniloop(x,y,xlim,ylim,xlab,ylab), 
+saveGIF( fun(x,y,xlim,ylim,xlab,ylab), 
          interval=0.05, movie.name="scatterdeconstruct.gif",
          ani.width=600)
 

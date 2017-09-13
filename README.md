@@ -15,3 +15,4 @@ ylab <- "Depressive Affect"
 gravity(x,y, xlab=xlab, ylab=ylab)
 ```
 
+![gravity](https://github.com/brandmaier/deconstructR/blob/master/inst/gravity.gif]

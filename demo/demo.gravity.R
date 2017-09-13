@@ -1,3 +1,5 @@
+library(deconstructR)
+
 set.seed(234)
 N <- 20
 x <- rnorm(N)
@@ -8,3 +10,5 @@ ylab <- "Depressive Affect"
 
 
 gravity(x,y, xlab=xlab, ylab=ylab)
+
+

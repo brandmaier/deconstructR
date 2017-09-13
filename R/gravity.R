@@ -1,19 +1,4 @@
 
-#' Gravity plot function
-#'
-#' @param x
-#' @param y
-#' @param xlim
-#'
-gravity <- function(x,y, xlim=NULL, ylim=NULL,xlab=NULL, ylab=NULL) 
-{
-  deconstructr.plot(x,y,xlim, ylim, xlab, ylab,movie.name=movie.name, type="gravity")
-}
-
-blackhole <- function(x,y, xlim=NULL, ylim=NULL,xlab=NULL, ylab=NULL) 
-{
-  deconstructr.plot(x,y,xlim, ylim, xlab, ylab, movie.name=movie.name, type="blackhole")
-}
 
 deconstructr.plot <- function(x,y, xlim=NULL, ylim=NULL,xlab=NULL, 
                               ylab=NULL, movie.name=NULL, type="gravity") {
@@ -34,9 +19,14 @@ height <- ylim[2]-ylim[1]
 floory <- ylim[1]
 freeze <- rep(FALSE, N)
 
-fun <- aniloop.gravity
-if (type == " blackhole") {
+
+if (type == "blackhole") {
   fun <- aniloop.blackhole
+} else if (type =="gravity") {
+  fun <- aniloop.gravity
+} else {
+  stop("Unknown type!")
+#  return();
 }
 
 

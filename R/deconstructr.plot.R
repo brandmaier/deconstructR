@@ -24,6 +24,8 @@ if (type == "blackhole") {
   fun <- aniloop.blackhole
 } else if (type =="gravity") {
   fun <- aniloop.gravity
+} else if (type == "flock") {
+  fun <- aniloop.flock
 } else {
   stop("Unknown type!")
 #  return();

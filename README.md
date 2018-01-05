@@ -16,3 +16,15 @@ gravity(x,y, xlab=xlab, ylab=ylab)
 ```
 
 ![gravity](https://github.com/brandmaier/deconstructR/blob/master/inst/gravity.gif?raw=true)
+
+# Other plot types
+
+Check our other plots:
+
+Flock plot
+
+![flock](https://github.com/brandmaier/deconstructR/blob/master/inst/flock.gif?raw=true)
+
+Blackhole
+
+![flock](https://github.com/brandmaier/deconstructR/blob/master/inst/blackhole.gif?raw=true)

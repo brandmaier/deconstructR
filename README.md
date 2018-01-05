@@ -1,6 +1,6 @@
 # deconstructR
 
-An R package for deconstructing scatter plots. Currently, two animated graphs are provided: `blackhole` and `gravity`. Here is a simple example: 
+An R package for deconstructing scatter plots. Currently, three animated plots are provided: `blackhole`, `flock`, and `gravity`. Here is a simple example: 
 
 ```{r, eval=FALSE}
 set.seed(234)
